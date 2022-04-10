@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tom Necke">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>To-do-Liste</title>
+</head>
+<body>
+    <head>
+        <h1>Meine To-do-Liste</h1>
+    </head>
+    <main>
+        <form onsubmit="addTodo()">
+            <input type="text" id="todofield">
+            <button type="submit">hinzufügen</button>
+        </form>
+        <ul id="todolist">
+
+        </ul>
+        <form onsubmit="removeTodo()">
+            <button>Alles Löschen</button>
+        </form>
+    </main>
+</body>
+</html>
