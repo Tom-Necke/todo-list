@@ -14,14 +14,14 @@
         <h1>Meine To-do-Liste</h1>
     </head>
     <main>
-        <form onsubmit="addTodo()">
+        <form onsubmit="addTodo(); return false">
             <input type="text" id="todofield">
             <button type="submit">hinzufügen</button>
         </form>
         <ul id="todolist">
 
         </ul>
-        <form onsubmit="removeTodo()">
+        <form onsubmit="removeTodo(); return false">
             <button type="submit">Alles Löschen</button>
         </form>
     </main>
